@@ -1,0 +1,16 @@
+{
+  "name": "finbot",
+  "version": "1.0.0",
+  "description": "Shaiful's Financial Tracker",
+  "scripts": {
+    "deploy:webapp": "clasp deploy --deploymentId AKfycbxVUNuWdCLOxdC3Z0_Kz84CBIsJmuMOvj1BiQ1cx1uJ_EqkL6XC"
+  },
+  "keywords": [
+    "telegram-bot",
+    "spreadsheet",
+    "finance",
+    "budget"
+  ],
+  "author": "ibnumalik",
+  "license": "MIT"
+}
