@@ -1,8 +1,11 @@
-function sendText(id, text) {
-  const url = `${TELEGRAM_URL}/sendMessage?chat_id=${id}&text=${encodeURIComponent(
-    text
-  )}`;
+function sendText(chat_id, text) {
+  const options = {
+    chat_id,
+    text: encodeURIComponent(text),
+    // parse_mode: 'MarkdownV2',
+  };
+
+  const url = `${TELEGRAM_URL}/sendMessage?${objToUrlParams(options)}`;
 
   const response = UrlFetchApp.fetch(url);
-  Logger.log(response.getContentText());
 }
