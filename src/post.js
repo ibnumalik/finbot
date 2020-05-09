@@ -1,5 +1,3 @@
-const adminId = Settings.ADMIN_ID;
-
 function doPost(e) {
   try {
     const data = JSON.parse(e.postData.contents);
@@ -7,20 +5,23 @@ function doPost(e) {
     const id = data.message.chat.id;
     var name = data.message.chat.first_name + ' ' + data.message.chat.last_name;
 
-    if (id !== +adminId) {
-      sendText(adminId, `Someone trying to use this bot: ${name}`);
+    if (id !== +ADMIN_ID) {
+      sendText(ADMIN_ID, `Someone trying to use this bot: ${name}`);
       return sendText(id, 'Unauthorized User');
     }
 
-    const command = text.split(' ')[0];
+    logs(text);
+    const command = text.split(' ');
 
-    switch (command) {
+    switch (command[0]) {
       case '/help':
+      case 'help':
         help(id);
         break;
 
       case '/add':
-        add(id);
+      case 'add':
+        add(id, command);
         break;
 
       default:
@@ -32,6 +33,6 @@ function doPost(e) {
     }
 
   } catch (e) {
-    sendText(adminId, `Error: ${JSON.stringify(e, null, 4)}`);
+    sendText(ADMIN_ID, `Error: ${JSON.stringify(e, null, 4)}`);
   }
 }
