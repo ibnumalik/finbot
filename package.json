@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Shaiful's Financial Tracker",
   "scripts": {
-    "deploy:webapp": "clasp push && clasp deploy --deploymentId AKfycbxVUNuWdCLOxdC3Z0_Kz84CBIsJmuMOvj1BiQ1cx1uJ_EqkL6XC"
+    "deploy:webapp": "clasp push && clasp deploy --deploymentId AKfycbxVUNuWdCLOxdC3Z0_Kz84CBIsJmuMOvj1BiQ1cx1uJ_EqkL6XC",
+    "test": "jest"
   },
   "keywords": [
     "telegram-bot",
@@ -13,7 +14,12 @@
   ],
   "author": "ibnumalik",
   "license": "MIT",
-  "dependencies": {
-    "@types/google-apps-script": "^1.0.14"
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@types/google-apps-script": "^1.0.14",
+    "@types/jest": "^26.0.0",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1"
   }
 }
