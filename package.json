@@ -4,7 +4,8 @@
   "description": "Shaiful's Financial Tracker",
   "scripts": {
     "deploy:webapp": "clasp push && clasp deploy --deploymentId AKfycbxVUNuWdCLOxdC3Z0_Kz84CBIsJmuMOvj1BiQ1cx1uJ_EqkL6XC",
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "keywords": [
     "telegram-bot",
@@ -20,6 +21,7 @@
     "@types/google-apps-script": "^1.0.14",
     "@types/jest": "^26.0.0",
     "babel-jest": "^26.0.1",
-    "jest": "^26.0.1"
+    "jest": "^26.0.1",
+    "typescript": "^3.9.5"
   }
 }
