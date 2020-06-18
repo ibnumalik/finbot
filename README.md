@@ -15,6 +15,15 @@ This Telegram bot aims to simplify the process of tracking cash flows. Instead o
    - Setup webhook and tell Telegram to post the data at our doPost function.
 2. Create sheets with name `ledger` and `logs`.
 
+## Development
+
+To start developing, all you need is IDE. If you want to deploy to Google App Script, you may want to install `clasp`. Clasp is a *[Command Line Apps Script Project](https://github.com/google/clasp/)*.
+
+```
+npm install -g @google/clasp
+```
+
+
 ## Commands
 
 When the Telegram bot is created, open the bot and chat with it. Type the available command and the bot will try to do the tasks. If the bot did not understand it, then it will tell you what format it can understand.
