@@ -3,6 +3,7 @@ declare namespace glFunctions {
     getMe(): void;
     setWebhook(): void;
     doGet(e): GoogleAppsScript.HTML.HtmlOutput;
+    doPost(e): void;
   }
 }
 

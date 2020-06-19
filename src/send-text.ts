@@ -1,6 +1,9 @@
-function sendText(chat_id, text) {
+import { objToUrlParams } from './obj-url-params';
+import { TELEGRAM_URL } from './settings';
+
+export function sendText(chatId: string | number, text: string) {
   const options = {
-    chat_id,
+    chat_id: chatId,
     text: encodeURIComponent(text),
     // parse_mode: 'MarkdownV2',
   };

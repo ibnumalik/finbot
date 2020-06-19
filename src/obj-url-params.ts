@@ -3,7 +3,7 @@
  *
  * @param obj Object
  */
-function objToUrlParams(obj) {
+export function objToUrlParams(obj: { [key: string]: any }) {
   return Object.entries(obj)
     .map(([key, val]) => (!val ? null : `${key}=${val}`))
     .filter(Boolean)
