@@ -26,6 +26,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-jest": "^26.0.1",
     "gas-webpack-plugin": "^1.0.2",
+    "html-webpack-plugin": "^4.3.0",
     "jest": "^26.0.1",
     "tslint": "^5.20.1",
     "typescript": "^3.9.5",

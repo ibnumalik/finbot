@@ -1,4 +1,5 @@
 const GasPlugin = require('gas-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -13,5 +14,8 @@ module.exports = {
   module: {
     rules: [{ test: /\.ts?$/, loader: 'awesome-typescript-loader' }],
   },
-  plugins: [new GasPlugin()],
+  plugins: [
+    new GasPlugin(),
+    new HtmlWebpackPlugin({ template: './src/index.html', inject: false }),
+  ],
 };
