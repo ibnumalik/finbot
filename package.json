@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Shaiful's Financial Tracker",
   "scripts": {
-    "deploy:webapp": "clasp push && clasp deploy --deploymentId AKfycbxVUNuWdCLOxdC3Z0_Kz84CBIsJmuMOvj1BiQ1cx1uJ_EqkL6XC",
+    "deploy:webapp": "npm run build && clasp push && clasp deploy --deploymentId AKfycbxVUNuWdCLOxdC3Z0_Kz84CBIsJmuMOvj1BiQ1cx1uJ_EqkL6XC",
     "test": "jest",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "push": "clasp push",
