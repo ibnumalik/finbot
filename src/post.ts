@@ -1,7 +1,7 @@
-import { logs } from './logs';
-import { sendText } from './send-text';
+import { logs } from './helpers/logs';
 import { ADMIN_ID } from './settings';
-import { TelegramUpdate } from './type/Telegram';
+import { sendText } from './telegram/send-text';
+import { TelegramUpdate } from './telegram/Telegram';
 
 export function doPost(e: GoogleAppsScript.Events.DoPost) {
   try {

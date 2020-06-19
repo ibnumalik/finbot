@@ -1,4 +1,4 @@
-import { addRow } from './spreadsheet/sheets';
+import { addRow } from '../spreadsheet/sheets';
 
 export function logs(text: any) {
   const context = text.split(' ')[0];

@@ -1,5 +1,5 @@
-import { objToUrlParams } from './obj-url-params';
-import { TELEGRAM_URL } from './settings';
+import { objToUrlParams } from '../helpers/obj-url-params';
+import { TELEGRAM_URL } from '../settings';
 
 export function sendText(chatId: string | number, text: string) {
   const options = {
