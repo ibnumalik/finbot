@@ -1,7 +1,7 @@
-import { addRow } from '../spreadsheet/sheets';
+import { Spreadsheet } from '../spreadsheet/sheets';
 
 export function logs(text: any) {
   const context = text.split(' ')[0];
 
-  addRow([new Date(), context, text]);
+  Spreadsheet.appendRow([new Date(), context, text]);
 }
