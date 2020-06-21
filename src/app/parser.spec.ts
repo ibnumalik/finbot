@@ -13,6 +13,6 @@ describe('Parser', () => {
   });
 
   test('should define action as first string in text', () => {
-    expect(parser.action).toBe('add');
+    expect(parser.getFirstString()).toBe('add');
   });
 });

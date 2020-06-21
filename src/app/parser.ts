@@ -11,7 +11,7 @@ export class Parser {
     this.token = text.split(' ');
   }
 
-  public get action(): string {
+  public getFirstString(): string {
     return this.token[0];
   }
 }
